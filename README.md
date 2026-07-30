@@ -83,9 +83,9 @@ open a machine terminal in your `Repos` folder:
 
 ```shell
 # Replace username with YOUR GitHub username.
-git clone https://github.com/username/ml-05-ensembles
+git clone https://github.com/crsellinger/CS44670-Module-5
 
-cd ml-05-ensembles
+cd CS44670-Modules-5
 code .
 ```
 
