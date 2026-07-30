@@ -25,7 +25,7 @@ See [docs/your-files.md] for more.
 
 Links:
 
-- [ml_05_case.ipynb](notebooks/ml_05_case.ipynb)
+- [ml_05_case.ipynb](notebooks/ml_05_ensembles.ipynb)
 
 ## Working Files
 
