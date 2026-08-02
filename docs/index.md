@@ -25,15 +25,15 @@ Describe your small technical modification to the example project.
 
 Include:
 
-- What you changed
-- Why you chose that change
-- How you verified that it worked
-- What result, output, chart, metric, or behavior confirmed the change
+- What you changed: Added train vs. test accuracy graphs for single model and random forest classifer.
+- Why you chose that change: To analyze the efficiency of both on given data set.
+- How you verified that it worked: Ran it.
+- What result, output, chart, metric, or behavior confirmed the change: Although the random forest classifer is more accurate set with 200 n_estimators, the decision tree (single model) requires much less resources to compute with relatively similar accuracy. We can see from just one tree in the random forest that the accuracy is lower than the single model. It takes, at minimum, 2 trees to reach or surpass the single model accuracy and about 25 trees to level off. I don't believe the data set is large or varied enough to justify the extra resources required to train the ensembles. Ultimately, choosing the single model for this case is the better option.
 
 Compared with the example project,
 explain what is different and why the change matters.
 
-Was it easy, or surprisingly challenging and why do you think so?
+Was it easy, or surprisingly challenging and why do you think so? The implementation was relatively easy. The difficult part was making a decision on how I wanted to analyze the models and how deep I needed to go to create enough understanding without being to burdensome.
 
 ## Phase 5. Custom Project
 
