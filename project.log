@@ -899,3 +899,758 @@ Name: count, dtype: int64
 2026-08-02 12:54:31 | INFO | M05 | Dataset: penguins   Target: sex (classification)
 2026-08-02 12:54:31 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
 2026-08-02 12:54:31 | INFO | M05 | ========================
+2026-08-02 13:43:32 | INFO | M05 | === RUN START ===
+2026-08-02 13:43:32 | INFO | M05 | project=M05
+2026-08-02 13:43:32 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 13:43:32 | INFO | M05 | python=3.14.6
+2026-08-02 13:43:32 | INFO | M05 | os=Windows 11
+2026-08-02 13:43:32 | INFO | M05 | shell=powershell
+2026-08-02 13:43:32 | INFO | M05 | cwd=notebooks
+2026-08-02 13:43:32 | INFO | M05 | github_actions=False
+2026-08-02 13:43:32 | INFO | M05 | Confirming installation:
+2026-08-02 13:43:32 | INFO | M05 |   python:       3.14.6
+2026-08-02 13:43:32 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 13:43:32 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 13:43:32 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 13:43:32 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 13:43:32 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 13:43:37 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:43:37 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:43:55 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:43:55 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:45:15 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:45:15 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:45:15 | INFO | M05 | Original rows: 891
+2026-08-02 13:45:15 | INFO | M05 | Model rows:    714
+2026-08-02 13:45:15 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 13:45:15 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 13:45:24 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:45:24 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:45:24 | INFO | M05 | Original rows: 891
+2026-08-02 13:45:24 | INFO | M05 | Model rows:    714
+2026-08-02 13:45:24 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 13:45:24 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 13:45:30 | INFO | M05 | Train instances: 571
+2026-08-02 13:45:30 | INFO | M05 | Test instances: 143
+2026-08-02 13:45:34 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 13:48:53 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:48:53 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:48:53 | INFO | M05 | Original rows: 891
+2026-08-02 13:48:53 | INFO | M05 | Model rows:    714
+2026-08-02 13:48:53 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 13:48:53 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 13:50:08 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:50:08 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:50:08 | INFO | M05 | Original rows: 891
+2026-08-02 13:50:08 | INFO | M05 | Model rows:    714
+2026-08-02 13:50:08 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 13:50:08 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 13:50:12 | INFO | M05 | Train instances: 571
+2026-08-02 13:50:12 | INFO | M05 | Test instances: 143
+2026-08-02 13:50:15 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 13:50:15 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 13:50:15 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 13:50:15 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 13:50:19 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 13:50:19 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 13:50:19 | INFO | M05 |   gradient_boosting  test accuracy = 0.825
+2026-08-02 13:50:19 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.825
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 13:50:34 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 13:55:05 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 13:55:05 | INFO | M05 |   age                  0.485
+2026-08-02 13:55:05 | INFO | M05 |   sex_num              0.315
+2026-08-02 13:55:05 | INFO | M05 |   pclass               0.176
+2026-08-02 13:55:05 | INFO | M05 |   alone_num            0.024
+2026-08-02 13:55:16 | INFO | M05 | ========================
+2026-08-02 13:55:16 | INFO | M05 | SUMMARY
+2026-08-02 13:55:16 | INFO | M05 | ========================
+2026-08-02 13:55:16 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 13:55:16 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 13:55:16 | INFO | M05 | ========================
+2026-08-02 13:55:19 | INFO | M05 | === RUN START ===
+2026-08-02 13:55:19 | INFO | M05 | project=M05
+2026-08-02 13:55:19 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 13:55:19 | INFO | M05 | python=3.14.6
+2026-08-02 13:55:19 | INFO | M05 | os=Windows 11
+2026-08-02 13:55:19 | INFO | M05 | shell=powershell
+2026-08-02 13:55:19 | INFO | M05 | cwd=notebooks
+2026-08-02 13:55:19 | INFO | M05 | github_actions=False
+2026-08-02 13:55:19 | INFO | M05 | Confirming installation:
+2026-08-02 13:55:19 | INFO | M05 |   python:       3.14.6
+2026-08-02 13:55:19 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 13:55:19 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 13:55:19 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 13:55:19 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 13:55:19 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 13:55:19 | INFO | M05 | Loading dataset: titanic
+2026-08-02 13:55:19 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 13:55:19 | INFO | M05 | Original rows: 891
+2026-08-02 13:55:19 | INFO | M05 | Model rows:    714
+2026-08-02 13:55:19 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 13:55:19 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 13:55:19 | INFO | M05 | Train instances: 571
+2026-08-02 13:55:19 | INFO | M05 | Test instances: 143
+2026-08-02 13:55:19 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 13:55:19 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 13:55:19 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 13:55:19 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 13:55:19 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 13:55:19 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 13:55:19 | INFO | M05 |   gradient_boosting  test accuracy = 0.825
+2026-08-02 13:55:19 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.825
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 13:55:19 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 13:55:20 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 13:55:20 | INFO | M05 |   age                  0.485
+2026-08-02 13:55:20 | INFO | M05 |   sex_num              0.315
+2026-08-02 13:55:20 | INFO | M05 |   pclass               0.176
+2026-08-02 13:55:20 | INFO | M05 |   alone_num            0.024
+2026-08-02 13:55:20 | INFO | M05 | ========================
+2026-08-02 13:55:20 | INFO | M05 | SUMMARY
+2026-08-02 13:55:20 | INFO | M05 | ========================
+2026-08-02 13:55:20 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 13:55:20 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 13:55:20 | INFO | M05 | ========================
+2026-08-02 14:01:50 | INFO | M05 | === RUN START ===
+2026-08-02 14:01:50 | INFO | M05 | project=M05
+2026-08-02 14:01:50 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:01:50 | INFO | M05 | python=3.14.6
+2026-08-02 14:01:50 | INFO | M05 | os=Windows 11
+2026-08-02 14:01:50 | INFO | M05 | shell=powershell
+2026-08-02 14:01:50 | INFO | M05 | cwd=notebooks
+2026-08-02 14:01:50 | INFO | M05 | github_actions=False
+2026-08-02 14:01:50 | INFO | M05 | Confirming installation:
+2026-08-02 14:01:50 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:01:50 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:01:50 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:01:50 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:01:50 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:01:50 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:01:50 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:01:50 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:01:50 | INFO | M05 | Original rows: 891
+2026-08-02 14:01:50 | INFO | M05 | Model rows:    714
+2026-08-02 14:01:50 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:01:50 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:01:50 | INFO | M05 | Train instances: 571
+2026-08-02 14:01:50 | INFO | M05 | Test instances: 143
+2026-08-02 14:01:50 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:01:50 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:01:50 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:01:50 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:01:50 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 14:01:50 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:01:50 | INFO | M05 |   gradient_boosting  test accuracy = 0.825
+2026-08-02 14:01:51 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.825
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 14:01:51 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 14:01:52 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:01:52 | INFO | M05 |   age                  0.485
+2026-08-02 14:01:52 | INFO | M05 |   sex_num              0.315
+2026-08-02 14:01:52 | INFO | M05 |   pclass               0.176
+2026-08-02 14:01:52 | INFO | M05 |   alone_num            0.024
+2026-08-02 14:01:52 | INFO | M05 | ========================
+2026-08-02 14:01:52 | INFO | M05 | SUMMARY
+2026-08-02 14:01:52 | INFO | M05 | ========================
+2026-08-02 14:01:52 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:01:52 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:01:52 | INFO | M05 | ========================
+2026-08-02 14:04:46 | INFO | M05 | === RUN START ===
+2026-08-02 14:04:46 | INFO | M05 | project=M05
+2026-08-02 14:04:46 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:04:46 | INFO | M05 | python=3.14.6
+2026-08-02 14:04:46 | INFO | M05 | os=Windows 11
+2026-08-02 14:04:46 | INFO | M05 | shell=powershell
+2026-08-02 14:04:46 | INFO | M05 | cwd=notebooks
+2026-08-02 14:04:46 | INFO | M05 | github_actions=False
+2026-08-02 14:04:46 | INFO | M05 | Confirming installation:
+2026-08-02 14:04:46 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:04:46 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:04:46 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:04:46 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:04:46 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:04:46 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:04:46 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:04:46 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:04:46 | INFO | M05 | Original rows: 891
+2026-08-02 14:04:46 | INFO | M05 | Model rows:    714
+2026-08-02 14:04:46 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:04:46 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:04:46 | INFO | M05 | Train instances: 571
+2026-08-02 14:04:46 | INFO | M05 | Test instances: 143
+2026-08-02 14:04:46 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:04:46 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:04:46 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:04:46 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:04:46 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 14:04:46 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:04:46 | INFO | M05 |   gradient_boosting  test accuracy = 0.818
+2026-08-02 14:04:46 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.818
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 14:04:46 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 14:04:48 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:04:48 | INFO | M05 |   age                  0.496
+2026-08-02 14:04:48 | INFO | M05 |   sex_num              0.313
+2026-08-02 14:04:48 | INFO | M05 |   pclass               0.165
+2026-08-02 14:04:48 | INFO | M05 |   alone_num            0.026
+2026-08-02 14:04:48 | INFO | M05 | ========================
+2026-08-02 14:04:48 | INFO | M05 | SUMMARY
+2026-08-02 14:04:48 | INFO | M05 | ========================
+2026-08-02 14:04:48 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:04:48 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:04:48 | INFO | M05 | ========================
+2026-08-02 14:08:04 | INFO | M05 | === RUN START ===
+2026-08-02 14:08:04 | INFO | M05 | project=M05
+2026-08-02 14:08:04 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:08:04 | INFO | M05 | python=3.14.6
+2026-08-02 14:08:04 | INFO | M05 | os=Windows 11
+2026-08-02 14:08:04 | INFO | M05 | shell=powershell
+2026-08-02 14:08:04 | INFO | M05 | cwd=notebooks
+2026-08-02 14:08:04 | INFO | M05 | github_actions=False
+2026-08-02 14:08:04 | INFO | M05 | Confirming installation:
+2026-08-02 14:08:04 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:08:04 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:08:04 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:08:04 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:08:04 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:08:04 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:08:04 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:08:04 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:08:04 | INFO | M05 | Original rows: 891
+2026-08-02 14:08:04 | INFO | M05 | Model rows:    714
+2026-08-02 14:08:04 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:08:04 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:08:04 | INFO | M05 | Train instances: 606
+2026-08-02 14:08:04 | INFO | M05 | Test instances: 108
+2026-08-02 14:08:04 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:08:04 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:08:04 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:08:04 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:08:04 | INFO | M05 |   single_tree        test accuracy = 0.778
+2026-08-02 14:08:04 | INFO | M05 |   random_forest      test accuracy = 0.741
+2026-08-02 14:08:04 | INFO | M05 |   gradient_boosting  test accuracy = 0.824
+2026-08-02 14:08:04 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.824
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 1  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 2  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 3  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 4  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 5  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 6  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 7  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 8  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth= 9  train=0.781  test=0.778
+2026-08-02 14:08:04 | DEBUG | M05 |   depth=10  train=0.781  test=0.778
+2026-08-02 14:08:05 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:08:05 | INFO | M05 |   age                  0.503
+2026-08-02 14:08:05 | INFO | M05 |   sex_num              0.302
+2026-08-02 14:08:05 | INFO | M05 |   pclass               0.168
+2026-08-02 14:08:05 | INFO | M05 |   alone_num            0.027
+2026-08-02 14:08:05 | INFO | M05 | ========================
+2026-08-02 14:08:05 | INFO | M05 | SUMMARY
+2026-08-02 14:08:05 | INFO | M05 | ========================
+2026-08-02 14:08:05 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:08:05 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:08:05 | INFO | M05 | ========================
+2026-08-02 14:08:33 | INFO | M05 | === RUN START ===
+2026-08-02 14:08:33 | INFO | M05 | project=M05
+2026-08-02 14:08:33 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:08:33 | INFO | M05 | python=3.14.6
+2026-08-02 14:08:33 | INFO | M05 | os=Windows 11
+2026-08-02 14:08:33 | INFO | M05 | shell=powershell
+2026-08-02 14:08:33 | INFO | M05 | cwd=notebooks
+2026-08-02 14:08:33 | INFO | M05 | github_actions=False
+2026-08-02 14:08:33 | INFO | M05 | Confirming installation:
+2026-08-02 14:08:33 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:08:33 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:08:33 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:08:33 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:08:33 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:08:33 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:08:33 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:08:33 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:08:33 | INFO | M05 | Original rows: 891
+2026-08-02 14:08:33 | INFO | M05 | Model rows:    714
+2026-08-02 14:08:33 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:08:33 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:08:33 | INFO | M05 | Train instances: 535
+2026-08-02 14:08:33 | INFO | M05 | Test instances: 179
+2026-08-02 14:08:33 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:08:33 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:08:33 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:08:33 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:08:33 | INFO | M05 |   single_tree        test accuracy = 0.782
+2026-08-02 14:08:33 | INFO | M05 |   random_forest      test accuracy = 0.721
+2026-08-02 14:08:33 | INFO | M05 |   gradient_boosting  test accuracy = 0.793
+2026-08-02 14:08:33 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.793
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 1  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 2  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 3  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 4  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 5  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 6  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 7  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 8  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth= 9  train=0.779  test=0.782
+2026-08-02 14:08:33 | DEBUG | M05 |   depth=10  train=0.779  test=0.782
+2026-08-02 14:08:34 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:08:34 | INFO | M05 |   age                  0.485
+2026-08-02 14:08:34 | INFO | M05 |   sex_num              0.313
+2026-08-02 14:08:34 | INFO | M05 |   pclass               0.171
+2026-08-02 14:08:34 | INFO | M05 |   alone_num            0.031
+2026-08-02 14:08:34 | INFO | M05 | ========================
+2026-08-02 14:08:34 | INFO | M05 | SUMMARY
+2026-08-02 14:08:34 | INFO | M05 | ========================
+2026-08-02 14:08:34 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:08:34 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:08:34 | INFO | M05 | ========================
+2026-08-02 14:10:38 | INFO | M05 | === RUN START ===
+2026-08-02 14:10:38 | INFO | M05 | project=M05
+2026-08-02 14:10:38 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:10:38 | INFO | M05 | python=3.14.6
+2026-08-02 14:10:38 | INFO | M05 | os=Windows 11
+2026-08-02 14:10:38 | INFO | M05 | shell=powershell
+2026-08-02 14:10:38 | INFO | M05 | cwd=notebooks
+2026-08-02 14:10:38 | INFO | M05 | github_actions=False
+2026-08-02 14:10:38 | INFO | M05 | Confirming installation:
+2026-08-02 14:10:38 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:10:38 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:10:38 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:10:38 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:10:38 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:10:38 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:10:38 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:10:38 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:10:38 | INFO | M05 | Original rows: 891
+2026-08-02 14:10:38 | INFO | M05 | Model rows:    714
+2026-08-02 14:10:38 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:10:38 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:10:38 | INFO | M05 | Train instances: 535
+2026-08-02 14:10:38 | INFO | M05 | Test instances: 179
+2026-08-02 14:10:38 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:10:38 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:10:38 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:10:38 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:10:38 | INFO | M05 |   single_tree        test accuracy = 0.788
+2026-08-02 14:10:38 | INFO | M05 |   random_forest      test accuracy = 0.732
+2026-08-02 14:10:38 | INFO | M05 |   gradient_boosting  test accuracy = 0.799
+2026-08-02 14:10:38 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.799
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 1  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 2  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 3  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 4  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 5  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 6  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 7  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 8  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth= 9  train=0.813  test=0.788
+2026-08-02 14:10:38 | DEBUG | M05 |   depth=10  train=0.813  test=0.788
+2026-08-02 14:10:40 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:10:40 | INFO | M05 |   age                  0.486
+2026-08-02 14:10:40 | INFO | M05 |   sex_num              0.316
+2026-08-02 14:10:40 | INFO | M05 |   pclass               0.173
+2026-08-02 14:10:40 | INFO | M05 |   alone_num            0.026
+2026-08-02 14:10:40 | INFO | M05 | ========================
+2026-08-02 14:10:40 | INFO | M05 | SUMMARY
+2026-08-02 14:10:40 | INFO | M05 | ========================
+2026-08-02 14:10:40 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:10:40 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:10:40 | INFO | M05 | ========================
+2026-08-02 14:11:34 | INFO | M05 | === RUN START ===
+2026-08-02 14:11:34 | INFO | M05 | project=M05
+2026-08-02 14:11:34 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:11:34 | INFO | M05 | python=3.14.6
+2026-08-02 14:11:34 | INFO | M05 | os=Windows 11
+2026-08-02 14:11:34 | INFO | M05 | shell=powershell
+2026-08-02 14:11:34 | INFO | M05 | cwd=notebooks
+2026-08-02 14:11:34 | INFO | M05 | github_actions=False
+2026-08-02 14:11:34 | INFO | M05 | Confirming installation:
+2026-08-02 14:11:34 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:11:34 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:11:34 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:11:34 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:11:34 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:11:34 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:11:34 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:11:34 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:11:34 | INFO | M05 | Original rows: 891
+2026-08-02 14:11:34 | INFO | M05 | Model rows:    714
+2026-08-02 14:11:34 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:11:34 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:11:34 | INFO | M05 | Train instances: 464
+2026-08-02 14:11:34 | INFO | M05 | Test instances: 250
+2026-08-02 14:11:34 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:11:34 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:11:35 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:11:35 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:11:35 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 14:11:35 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:11:35 | INFO | M05 |   gradient_boosting  test accuracy = 0.776
+2026-08-02 14:11:35 | INFO | M05 | Best model: single_tree with test accuracy = 0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 1  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 2  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 3  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 4  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 5  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 6  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 7  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 8  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth= 9  train=0.817  test=0.776
+2026-08-02 14:11:35 | DEBUG | M05 |   depth=10  train=0.817  test=0.776
+2026-08-02 14:11:36 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:11:36 | INFO | M05 |   age                  0.465
+2026-08-02 14:11:36 | INFO | M05 |   sex_num              0.329
+2026-08-02 14:11:36 | INFO | M05 |   pclass               0.177
+2026-08-02 14:11:36 | INFO | M05 |   alone_num            0.028
+2026-08-02 14:11:36 | INFO | M05 | ========================
+2026-08-02 14:11:36 | INFO | M05 | SUMMARY
+2026-08-02 14:11:36 | INFO | M05 | ========================
+2026-08-02 14:11:36 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:11:36 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:11:36 | INFO | M05 | ========================
+2026-08-02 14:12:02 | INFO | M05 | === RUN START ===
+2026-08-02 14:12:02 | INFO | M05 | project=M05
+2026-08-02 14:12:02 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:12:02 | INFO | M05 | python=3.14.6
+2026-08-02 14:12:02 | INFO | M05 | os=Windows 11
+2026-08-02 14:12:02 | INFO | M05 | shell=powershell
+2026-08-02 14:12:02 | INFO | M05 | cwd=notebooks
+2026-08-02 14:12:02 | INFO | M05 | github_actions=False
+2026-08-02 14:12:02 | INFO | M05 | Confirming installation:
+2026-08-02 14:12:02 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:12:02 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:12:02 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:12:02 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:12:02 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:12:02 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:12:03 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:12:03 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:12:03 | INFO | M05 | Original rows: 891
+2026-08-02 14:12:03 | INFO | M05 | Model rows:    714
+2026-08-02 14:12:03 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:12:03 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:12:03 | INFO | M05 | Train instances: 571
+2026-08-02 14:12:03 | INFO | M05 | Test instances: 143
+2026-08-02 14:12:03 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:12:03 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:12:03 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:12:03 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:12:03 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 14:12:03 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:12:03 | INFO | M05 |   gradient_boosting  test accuracy = 0.790
+2026-08-02 14:12:03 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.790
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 14:12:03 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 14:12:05 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:12:05 | INFO | M05 |   age                  0.485
+2026-08-02 14:12:05 | INFO | M05 |   sex_num              0.315
+2026-08-02 14:12:05 | INFO | M05 |   pclass               0.176
+2026-08-02 14:12:05 | INFO | M05 |   alone_num            0.024
+2026-08-02 14:12:05 | INFO | M05 | ========================
+2026-08-02 14:12:05 | INFO | M05 | SUMMARY
+2026-08-02 14:12:05 | INFO | M05 | ========================
+2026-08-02 14:12:05 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:12:05 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:12:05 | INFO | M05 | ========================
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 14:17:31 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 14:18:50 | INFO | M05 | === RUN START ===
+2026-08-02 14:18:50 | INFO | M05 | project=M05
+2026-08-02 14:18:50 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:18:50 | INFO | M05 | python=3.14.6
+2026-08-02 14:18:50 | INFO | M05 | os=Windows 11
+2026-08-02 14:18:50 | INFO | M05 | shell=powershell
+2026-08-02 14:18:50 | INFO | M05 | cwd=notebooks
+2026-08-02 14:18:50 | INFO | M05 | github_actions=False
+2026-08-02 14:18:50 | INFO | M05 | Confirming installation:
+2026-08-02 14:18:50 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:18:50 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:18:50 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:18:50 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:18:50 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:18:50 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:18:50 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:18:50 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:18:50 | INFO | M05 | Original rows: 891
+2026-08-02 14:18:50 | INFO | M05 | Model rows:    714
+2026-08-02 14:18:50 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:18:50 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:18:50 | INFO | M05 | Train instances: 571
+2026-08-02 14:18:50 | INFO | M05 | Test instances: 143
+2026-08-02 14:18:50 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:18:50 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:18:50 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:18:50 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:18:50 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 14:18:50 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:18:50 | INFO | M05 |   gradient_boosting  test accuracy = 0.790
+2026-08-02 14:18:50 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.790
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 14:18:50 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 14:18:52 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:18:52 | INFO | M05 |   age                  0.485
+2026-08-02 14:18:52 | INFO | M05 |   sex_num              0.315
+2026-08-02 14:18:52 | INFO | M05 |   pclass               0.176
+2026-08-02 14:18:52 | INFO | M05 |   alone_num            0.024
+2026-08-02 14:18:52 | INFO | M05 | ========================
+2026-08-02 14:18:52 | INFO | M05 | SUMMARY
+2026-08-02 14:18:52 | INFO | M05 | ========================
+2026-08-02 14:18:52 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:18:52 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:18:52 | INFO | M05 | ========================
+2026-08-02 14:19:59 | INFO | M05 | === RUN START ===
+2026-08-02 14:19:59 | INFO | M05 | project=M05
+2026-08-02 14:19:59 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:19:59 | INFO | M05 | python=3.14.6
+2026-08-02 14:19:59 | INFO | M05 | os=Windows 11
+2026-08-02 14:19:59 | INFO | M05 | shell=powershell
+2026-08-02 14:19:59 | INFO | M05 | cwd=notebooks
+2026-08-02 14:19:59 | INFO | M05 | github_actions=False
+2026-08-02 14:19:59 | INFO | M05 | Confirming installation:
+2026-08-02 14:19:59 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:19:59 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:19:59 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:19:59 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:19:59 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:19:59 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:19:59 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:19:59 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:19:59 | INFO | M05 | Original rows: 891
+2026-08-02 14:19:59 | INFO | M05 | Model rows:    714
+2026-08-02 14:19:59 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:19:59 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:19:59 | INFO | M05 | Train instances: 571
+2026-08-02 14:19:59 | INFO | M05 | Test instances: 143
+2026-08-02 14:19:59 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:19:59 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:19:59 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:19:59 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:19:59 | INFO | M05 |   single_tree        test accuracy = 0.776
+2026-08-02 14:19:59 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:19:59 | INFO | M05 |   gradient_boosting  test accuracy = 0.790
+2026-08-02 14:19:59 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.790
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 1  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 2  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 3  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 4  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 5  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 6  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 7  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 8  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth= 9  train=0.811  test=0.776
+2026-08-02 14:19:59 | DEBUG | M05 |   depth=10  train=0.811  test=0.776
+2026-08-02 14:20:01 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:20:01 | INFO | M05 |   age                  0.485
+2026-08-02 14:20:01 | INFO | M05 |   sex_num              0.315
+2026-08-02 14:20:01 | INFO | M05 |   pclass               0.176
+2026-08-02 14:20:01 | INFO | M05 |   alone_num            0.024
+2026-08-02 14:20:01 | INFO | M05 | ========================
+2026-08-02 14:20:01 | INFO | M05 | SUMMARY
+2026-08-02 14:20:01 | INFO | M05 | ========================
+2026-08-02 14:20:01 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:20:01 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:20:01 | INFO | M05 | ========================
+2026-08-02 14:23:09 | INFO | M05 | === RUN START ===
+2026-08-02 14:23:09 | INFO | M05 | project=M05
+2026-08-02 14:23:09 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:23:09 | INFO | M05 | python=3.14.6
+2026-08-02 14:23:09 | INFO | M05 | os=Windows 11
+2026-08-02 14:23:09 | INFO | M05 | shell=powershell
+2026-08-02 14:23:09 | INFO | M05 | cwd=notebooks
+2026-08-02 14:23:09 | INFO | M05 | github_actions=False
+2026-08-02 14:23:09 | INFO | M05 | Confirming installation:
+2026-08-02 14:23:09 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:23:09 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:23:09 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:23:09 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:23:09 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:23:09 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:23:09 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:23:09 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:23:09 | INFO | M05 | Original rows: 891
+2026-08-02 14:23:09 | INFO | M05 | Model rows:    714
+2026-08-02 14:23:09 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:23:09 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:23:09 | INFO | M05 | Train instances: 571
+2026-08-02 14:23:09 | INFO | M05 | Test instances: 143
+2026-08-02 14:23:09 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:23:09 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:23:09 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:23:09 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:23:09 | INFO | M05 |   single_tree        test accuracy = 0.783
+2026-08-02 14:23:09 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:23:09 | INFO | M05 |   gradient_boosting  test accuracy = 0.825
+2026-08-02 14:23:09 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.825
+2026-08-02 14:23:10 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:23:10 | INFO | M05 |   age                  0.496
+2026-08-02 14:23:10 | INFO | M05 |   sex_num              0.313
+2026-08-02 14:23:10 | INFO | M05 |   pclass               0.165
+2026-08-02 14:23:10 | INFO | M05 |   alone_num            0.026
+2026-08-02 14:23:10 | INFO | M05 | ========================
+2026-08-02 14:23:10 | INFO | M05 | SUMMARY
+2026-08-02 14:23:10 | INFO | M05 | ========================
+2026-08-02 14:23:10 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:23:10 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:23:10 | INFO | M05 | ========================
+2026-08-02 14:29:20 | INFO | M05 | === RUN START ===
+2026-08-02 14:29:20 | INFO | M05 | project=M05
+2026-08-02 14:29:20 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 14:29:20 | INFO | M05 | python=3.14.6
+2026-08-02 14:29:20 | INFO | M05 | os=Windows 11
+2026-08-02 14:29:20 | INFO | M05 | shell=powershell
+2026-08-02 14:29:20 | INFO | M05 | cwd=notebooks
+2026-08-02 14:29:20 | INFO | M05 | github_actions=False
+2026-08-02 14:29:20 | INFO | M05 | Confirming installation:
+2026-08-02 14:29:20 | INFO | M05 |   python:       3.14.6
+2026-08-02 14:29:20 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 14:29:20 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 14:29:20 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 14:29:20 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 14:29:20 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 14:29:20 | INFO | M05 | Loading dataset: titanic
+2026-08-02 14:29:20 | INFO | M05 | Loaded: 891 rows (instances), 15 columns
+2026-08-02 14:29:20 | INFO | M05 | Original rows: 891
+2026-08-02 14:29:20 | INFO | M05 | Model rows:    714
+2026-08-02 14:29:20 | INFO | M05 | Classes in target 'survived': [np.int64(0), np.int64(1)]
+2026-08-02 14:29:20 | DEBUG | M05 | Class counts:
+survived
+0    424
+1    290
+Name: count, dtype: int64
+2026-08-02 14:29:20 | INFO | M05 | Train instances: 571
+2026-08-02 14:29:20 | INFO | M05 | Test instances: 143
+2026-08-02 14:29:20 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 14:29:20 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 14:29:20 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 14:29:20 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 14:29:20 | INFO | M05 |   single_tree        test accuracy = 0.783
+2026-08-02 14:29:20 | INFO | M05 |   random_forest      test accuracy = 0.748
+2026-08-02 14:29:20 | INFO | M05 |   gradient_boosting  test accuracy = 0.825
+2026-08-02 14:29:20 | INFO | M05 | Best model: gradient_boosting with test accuracy = 0.825
+2026-08-02 14:29:21 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 14:29:21 | INFO | M05 |   age                  0.496
+2026-08-02 14:29:21 | INFO | M05 |   sex_num              0.313
+2026-08-02 14:29:21 | INFO | M05 |   pclass               0.165
+2026-08-02 14:29:21 | INFO | M05 |   alone_num            0.026
+2026-08-02 14:29:21 | INFO | M05 | ========================
+2026-08-02 14:29:21 | INFO | M05 | SUMMARY
+2026-08-02 14:29:21 | INFO | M05 | ========================
+2026-08-02 14:29:21 | INFO | M05 | Dataset: titanic   Target: survived (classification)
+2026-08-02 14:29:21 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 14:29:21 | INFO | M05 | ========================
