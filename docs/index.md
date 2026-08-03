@@ -41,16 +41,18 @@ Describe your custom project and how you made your modeling decisions.
 
 Be specific about what changed from the example project.
 
+I wanted to predict segment based on feature columns revenue_usd_bn, operating_margin_pct, operating_income_usd_bn, and capex_usd_bn.
+
 ### Basis and Data
 
 Describe the dataset, input, or example you started with.
 
 Include:
 
-- The original example dataset or input
-- The data source
-- Why you chose it, kept it, or changed it
-- Any important limitations or assumptions
+- The original example dataset or input: Global Semiconductor Industry 2010-2026
+- The data source: Kaggle
+- Why you chose it, kept it, or changed it: I really want to make this data set viable.
+- Any important limitations or assumptions:
 
 ### Modeling Approach
 
@@ -58,10 +60,10 @@ Describe the problem type and modeling approach for this project.
 
 Include:
 
-- Is this supervised or unsupervised and how do you know
-- Is this classification, regression, clustering, recommendation, forecasting, or another type of ML task
-- What kind of target works well for this approach
-- Why your selected model or method is appropriate
+- Is this supervised or unsupervised and how do you know: Supervised as all the data is labeled and given
+- Is this classification, regression, clustering, recommendation, forecasting, or another type of ML task: Classification
+- What kind of target works well for this approach: Categorical
+- Why your selected model or method is appropriate: I wanted to be able to predict the segment each company focused on based on their financial data. Testing and evaluating the data, I found that there may be too many different segments to be able to predict accurately as it seems there is overlap of the financial data between segments. Certain segments have financial data that is too similar to train on to be able to predict. It's almost the flip of a coin to predict two segments with similar financial data.
 
 ### Target
 
@@ -71,6 +73,8 @@ Then describe your chosen target variable.
 
 Explain how your target choice changes the modeling approach, interpretation, or evaluation.
 
+The example target from the Penguins dataset was species. A categorical target. The target I chose for my dataset was segment, which is also a categorical target. But, my target has about 450 unique values, whereas species there is only 4. Having 11 times as many choices exponentially increases the decision making and complexity within the model.
+
 ### Features
 
 Describe the example features.
@@ -78,6 +82,8 @@ Describe the example features.
 Then describe the features you used to predict your target.
 
 Explain what you changed, added, removed, or kept and why.
+
+Used all financial data features. There is too much variability between all features and I need to PCA to evaluate features I can drop. All models did not do well using all data and I had to cut all but the top 4 segments to get an ideal model accuracy for each model. I created a correlation matrix and Pearson correlation coefficients for each features used but did not testing. Tested dropping features based on low coefficient, which resulted in underfitted data and lower accuracies.
 
 ### Evaluation and Results
 
@@ -89,6 +95,8 @@ Include:
 - The main result
 - Whether the result was useful, interesting, surprising, or disappointing
 - Any weakness, limitation, or next improvement
+
+Initially, I took all the data and found the Random Forest Classifier to be the best model, but only with a 68.5% accuracy. Then, I cut the segments down and only used the top 4. With this, I found the single model and the random forest had the same accuracy at 90.4%. The random forest does much better than with the large amount of data as the single model had an accuracy around 50%, or a coin flip. Not very ideal. Reducing the segments had much better results as I had suspected there were too many decisions to funnel the correct output. If I had the time, I would reduce the dimensionality via principal component analysis to find which financial features have less overlap and make a better prediction with all segments involved.
 
 ### Summary
 
@@ -103,3 +111,5 @@ Include:
 - What kinds of real problems you could apply these skills to in the future
 
 Display at least one image or screenshot showing your work.
+
+![Confusion Matrices](/docs/images/image.png)

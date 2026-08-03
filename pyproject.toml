@@ -24,8 +24,9 @@ dependencies = [
     "numpy",     # numerical computing (sklearn/pandas dependency, explicit is cleaner)
     "pandas",    # tabular data manipulation
     "scikit-learn", # machine learning library
-    "seaborn",   # statistical data visualization built on matplotlib
-    "matplotlib" # plotting library for static, animated, and interactive visualizations in Python
+    "seaborn",   # statistical data visualization built on matplotlib # plotting library for static, animated, and interactive visualizations in Python
+    "matplotlib",
+    "kagglehub>=1.0.2",
 ]
 
 [project.optional-dependencies]

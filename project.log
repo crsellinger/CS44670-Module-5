@@ -1654,3 +1654,2111 @@ Name: count, dtype: int64
 2026-08-02 14:29:21 | INFO | M05 | Dataset: titanic   Target: survived (classification)
 2026-08-02 14:29:21 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
 2026-08-02 14:29:21 | INFO | M05 | ========================
+2026-08-02 19:06:12 | INFO | M05 | === RUN START ===
+2026-08-02 19:06:12 | INFO | M05 | project=M05
+2026-08-02 19:06:12 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:06:12 | INFO | M05 | python=3.14.6
+2026-08-02 19:06:12 | INFO | M05 | os=Windows 11
+2026-08-02 19:06:12 | INFO | M05 | shell=powershell
+2026-08-02 19:06:12 | INFO | M05 | cwd=notebooks
+2026-08-02 19:06:12 | INFO | M05 | github_actions=False
+2026-08-02 19:06:12 | INFO | M05 | Confirming installation:
+2026-08-02 19:06:12 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:06:12 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:06:12 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:06:12 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:06:12 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:06:12 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:10:39 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:10:40 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:10:55 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:10:55 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:10:55 | INFO | M05 | Original rows: 617
+2026-08-02 19:10:55 | INFO | M05 | Model rows:    617
+2026-08-02 19:10:55 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 19:10:55 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 19:11:07 | INFO | M05 | Train instances: 493
+2026-08-02 19:11:07 | INFO | M05 | Test instances: 124
+2026-08-02 19:11:12 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:11:12 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:11:12 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:11:13 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:11:16 | INFO | M05 |   single_tree        test accuracy = 0.540
+2026-08-02 19:11:16 | INFO | M05 |   random_forest      test accuracy = 0.685
+2026-08-02 19:11:16 | INFO | M05 |   gradient_boosting  test accuracy = 0.677
+2026-08-02 19:11:16 | INFO | M05 | Best model: random_forest with test accuracy = 0.685
+2026-08-02 19:13:05 | INFO | M05 | === RUN START ===
+2026-08-02 19:13:05 | INFO | M05 | project=M05
+2026-08-02 19:13:05 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:13:05 | INFO | M05 | python=3.14.6
+2026-08-02 19:13:05 | INFO | M05 | os=Windows 11
+2026-08-02 19:13:05 | INFO | M05 | shell=powershell
+2026-08-02 19:13:05 | INFO | M05 | cwd=notebooks
+2026-08-02 19:13:05 | INFO | M05 | github_actions=False
+2026-08-02 19:13:05 | INFO | M05 | Confirming installation:
+2026-08-02 19:13:05 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:13:05 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:13:05 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:13:05 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:13:05 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:13:05 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:13:05 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:13:05 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:13:05 | INFO | M05 | Original rows: 617
+2026-08-02 19:13:05 | INFO | M05 | Model rows:    617
+2026-08-02 19:13:05 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 19:13:05 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 19:13:05 | INFO | M05 | Train instances: 493
+2026-08-02 19:13:05 | INFO | M05 | Test instances: 124
+2026-08-02 19:13:05 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:13:05 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:13:05 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:13:06 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:13:06 | INFO | M05 |   single_tree        test accuracy = 0.597
+2026-08-02 19:13:06 | INFO | M05 |   random_forest      test accuracy = 0.685
+2026-08-02 19:13:06 | INFO | M05 |   gradient_boosting  test accuracy = 0.677
+2026-08-02 19:13:06 | INFO | M05 | Best model: random_forest with test accuracy = 0.685
+2026-08-02 19:13:17 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:13:17 | INFO | M05 |   capex_usd_bn         0.338
+2026-08-02 19:13:17 | INFO | M05 |   operating_margin_pct 0.305
+2026-08-02 19:13:17 | INFO | M05 |   operating_income_usd_bn 0.193
+2026-08-02 19:13:17 | INFO | M05 |   revenue_usd_bn       0.163
+2026-08-02 19:13:17 | INFO | M05 | ========================
+2026-08-02 19:13:17 | INFO | M05 | SUMMARY
+2026-08-02 19:13:17 | INFO | M05 | ========================
+2026-08-02 19:13:17 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 19:13:17 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:13:17 | INFO | M05 | ========================
+2026-08-02 19:16:28 | INFO | M05 | === RUN START ===
+2026-08-02 19:16:28 | INFO | M05 | project=M05
+2026-08-02 19:16:28 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:16:28 | INFO | M05 | python=3.14.6
+2026-08-02 19:16:28 | INFO | M05 | os=Windows 11
+2026-08-02 19:16:28 | INFO | M05 | shell=powershell
+2026-08-02 19:16:28 | INFO | M05 | cwd=notebooks
+2026-08-02 19:16:28 | INFO | M05 | github_actions=False
+2026-08-02 19:16:28 | INFO | M05 | Confirming installation:
+2026-08-02 19:16:28 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:16:28 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:16:28 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:16:28 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:16:28 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:16:28 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:16:28 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:16:28 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:16:28 | INFO | M05 | Original rows: 617
+2026-08-02 19:16:28 | INFO | M05 | Model rows:    617
+2026-08-02 19:16:28 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 19:16:28 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 19:16:28 | INFO | M05 | Train instances: 493
+2026-08-02 19:16:28 | INFO | M05 | Test instances: 124
+2026-08-02 19:16:28 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:16:28 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:16:28 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:16:29 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:16:29 | INFO | M05 |   single_tree        test accuracy = 0.597
+2026-08-02 19:16:29 | INFO | M05 |   random_forest      test accuracy = 0.685
+2026-08-02 19:16:29 | INFO | M05 |   gradient_boosting  test accuracy = 0.677
+2026-08-02 19:16:29 | INFO | M05 | Best model: random_forest with test accuracy = 0.685
+2026-08-02 19:16:40 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:16:40 | INFO | M05 |   capex_usd_bn         0.338
+2026-08-02 19:16:40 | INFO | M05 |   operating_margin_pct 0.305
+2026-08-02 19:16:40 | INFO | M05 |   operating_income_usd_bn 0.193
+2026-08-02 19:16:40 | INFO | M05 |   revenue_usd_bn       0.163
+2026-08-02 19:16:40 | INFO | M05 | ========================
+2026-08-02 19:16:40 | INFO | M05 | SUMMARY
+2026-08-02 19:16:40 | INFO | M05 | ========================
+2026-08-02 19:16:40 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 19:16:40 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:16:40 | INFO | M05 | ========================
+2026-08-02 19:27:59 | INFO | M05 | === RUN START ===
+2026-08-02 19:27:59 | INFO | M05 | project=M05
+2026-08-02 19:27:59 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:27:59 | INFO | M05 | python=3.14.6
+2026-08-02 19:27:59 | INFO | M05 | os=Windows 11
+2026-08-02 19:27:59 | INFO | M05 | shell=powershell
+2026-08-02 19:27:59 | INFO | M05 | cwd=notebooks
+2026-08-02 19:27:59 | INFO | M05 | github_actions=False
+2026-08-02 19:27:59 | INFO | M05 | Confirming installation:
+2026-08-02 19:27:59 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:27:59 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:27:59 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:27:59 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:27:59 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:27:59 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:28:01 | INFO | M05 | === RUN START ===
+2026-08-02 19:28:01 | INFO | M05 | project=M05
+2026-08-02 19:28:01 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:28:01 | INFO | M05 | python=3.14.6
+2026-08-02 19:28:01 | INFO | M05 | os=Windows 11
+2026-08-02 19:28:01 | INFO | M05 | shell=powershell
+2026-08-02 19:28:01 | INFO | M05 | cwd=notebooks
+2026-08-02 19:28:01 | INFO | M05 | github_actions=False
+2026-08-02 19:28:01 | INFO | M05 | Confirming installation:
+2026-08-02 19:28:01 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:28:01 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:28:01 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:28:01 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:28:01 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:28:01 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:28:01 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:28:02 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:28:02 | INFO | M05 | Original rows: 617
+2026-08-02 19:28:02 | INFO | M05 | Model rows:    617
+2026-08-02 19:28:02 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 19:28:02 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 19:28:02 | INFO | M05 | Train instances: 493
+2026-08-02 19:28:02 | INFO | M05 | Test instances: 124
+2026-08-02 19:28:02 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:28:02 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:28:02 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:28:03 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:28:03 | INFO | M05 |   single_tree        test accuracy = 0.597
+2026-08-02 19:28:03 | INFO | M05 |   random_forest      test accuracy = 0.685
+2026-08-02 19:28:03 | INFO | M05 |   gradient_boosting  test accuracy = 0.677
+2026-08-02 19:28:03 | INFO | M05 | Best model: random_forest with test accuracy = 0.685
+2026-08-02 19:28:14 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:28:14 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:28:14 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:28:14 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:28:14 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:28:14 | INFO | M05 |   capex_usd_bn         0.338
+2026-08-02 19:28:14 | INFO | M05 |   operating_margin_pct 0.305
+2026-08-02 19:28:14 | INFO | M05 |   operating_income_usd_bn 0.193
+2026-08-02 19:28:14 | INFO | M05 |   revenue_usd_bn       0.163
+2026-08-02 19:28:14 | INFO | M05 | ========================
+2026-08-02 19:28:14 | INFO | M05 | SUMMARY
+2026-08-02 19:28:14 | INFO | M05 | ========================
+2026-08-02 19:28:14 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 19:28:14 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:28:14 | INFO | M05 | ========================
+2026-08-02 19:29:55 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:29:55 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:29:55 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:29:55 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:30:17 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:30:17 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:30:17 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:30:17 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:32:33 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:32:33 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:32:33 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:32:33 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:37:45 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:37:45 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:37:45 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:37:45 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:41:06 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:41:06 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:41:06 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:41:06 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:42:56 | INFO | M05 | === RUN START ===
+2026-08-02 19:42:56 | INFO | M05 | project=M05
+2026-08-02 19:42:56 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:42:56 | INFO | M05 | python=3.14.6
+2026-08-02 19:42:56 | INFO | M05 | os=Windows 11
+2026-08-02 19:42:56 | INFO | M05 | shell=powershell
+2026-08-02 19:42:56 | INFO | M05 | cwd=notebooks
+2026-08-02 19:42:56 | INFO | M05 | github_actions=False
+2026-08-02 19:42:56 | INFO | M05 | Confirming installation:
+2026-08-02 19:42:56 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:42:56 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:42:56 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:42:56 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:42:56 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:42:56 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:42:56 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:42:56 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:42:56 | INFO | M05 | Original rows: 617
+2026-08-02 19:42:56 | INFO | M05 | Model rows:    617
+2026-08-02 19:42:56 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 19:42:56 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 19:42:56 | INFO | M05 | Train instances: 493
+2026-08-02 19:42:56 | INFO | M05 | Test instances: 124
+2026-08-02 19:42:56 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:42:56 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:42:56 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:42:57 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:42:57 | INFO | M05 |   single_tree        test accuracy = 0.597
+2026-08-02 19:42:57 | INFO | M05 |   random_forest      test accuracy = 0.685
+2026-08-02 19:42:57 | INFO | M05 |   gradient_boosting  test accuracy = 0.677
+2026-08-02 19:42:57 | INFO | M05 | Best model: random_forest with test accuracy = 0.685
+2026-08-02 19:43:08 | INFO | M05 | ==========Random Forest==========
+2026-08-02 19:43:08 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:43:08 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:43:08 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:43:08 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 19:43:08 | INFO | M05 | Decision Tree Test Accuracy: 0.597
+2026-08-02 19:43:08 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:43:08 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.50      1.00      0.67         3
+equipment_diversified       0.29      0.57      0.38         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.22      0.57      0.32         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.60      1.00      0.75        21
+           idm_analog       0.33      0.14      0.20         7
+       idm_automotive       0.60      0.90      0.72        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       1.00      0.71      0.83        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.60       124
+            macro avg       0.37      0.44      0.39       124
+         weighted avg       0.49      0.60      0.52       124
+
+2026-08-02 19:43:08 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:43:08 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:43:08 | INFO | M05 |   capex_usd_bn         0.338
+2026-08-02 19:43:08 | INFO | M05 |   operating_margin_pct 0.305
+2026-08-02 19:43:08 | INFO | M05 |   operating_income_usd_bn 0.193
+2026-08-02 19:43:08 | INFO | M05 |   revenue_usd_bn       0.163
+2026-08-02 19:43:09 | INFO | M05 | ========================
+2026-08-02 19:43:09 | INFO | M05 | SUMMARY
+2026-08-02 19:43:09 | INFO | M05 | ========================
+2026-08-02 19:43:09 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 19:43:09 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:43:09 | INFO | M05 | ========================
+2026-08-02 19:43:55 | INFO | M05 | ==========Random Forest==========
+2026-08-02 19:43:55 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:43:55 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:43:55 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:43:55 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:43:56 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 19:43:56 | INFO | M05 | Decision Tree Test Accuracy: 0.597
+2026-08-02 19:43:56 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:43:56 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.50      1.00      0.67         3
+equipment_diversified       0.29      0.57      0.38         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.22      0.57      0.32         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.60      1.00      0.75        21
+           idm_analog       0.33      0.14      0.20         7
+       idm_automotive       0.60      0.90      0.72        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       1.00      0.71      0.83        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.60       124
+            macro avg       0.37      0.44      0.39       124
+         weighted avg       0.49      0.60      0.52       124
+
+2026-08-02 19:45:44 | INFO | M05 | ==========Random Forest==========
+2026-08-02 19:45:44 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:45:44 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:45:44 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:45:44 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:45:45 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 19:45:45 | INFO | M05 | Decision Tree Test Accuracy: 0.597
+2026-08-02 19:45:45 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:45:45 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.50      1.00      0.67         3
+equipment_diversified       0.29      0.57      0.38         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.22      0.57      0.32         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.60      1.00      0.75        21
+           idm_analog       0.33      0.14      0.20         7
+       idm_automotive       0.60      0.90      0.72        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       1.00      0.71      0.83        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.60       124
+            macro avg       0.37      0.44      0.39       124
+         weighted avg       0.49      0.60      0.52       124
+
+2026-08-02 19:47:00 | INFO | M05 | === RUN START ===
+2026-08-02 19:47:00 | INFO | M05 | project=M05
+2026-08-02 19:47:00 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:47:00 | INFO | M05 | python=3.14.6
+2026-08-02 19:47:00 | INFO | M05 | os=Windows 11
+2026-08-02 19:47:00 | INFO | M05 | shell=powershell
+2026-08-02 19:47:00 | INFO | M05 | cwd=notebooks
+2026-08-02 19:47:00 | INFO | M05 | github_actions=False
+2026-08-02 19:47:00 | INFO | M05 | Confirming installation:
+2026-08-02 19:47:00 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:47:00 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:47:00 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:47:00 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:47:00 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:47:00 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:47:00 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:47:00 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:47:00 | INFO | M05 | Original rows: 617
+2026-08-02 19:47:00 | INFO | M05 | Model rows:    617
+2026-08-02 19:47:00 | INFO | M05 | Classes in target 'company_name': ['AMD', 'ASML', 'Analog Devices', 'Applied Materials', 'Broadcom', 'Cadence', 'Cerebras Systems', 'ChangXin Memory (CXMT)', 'GlobalFoundries', 'Graphcore', 'Groq', 'HiSilicon (Huawei)', 'Hua Hong', 'Infineon', 'Intel', 'KLA', 'Lam Research', 'Marvell', 'MediaTek', 'Microchip', 'Micron', 'NVIDIA', 'NXP Semiconductors', 'Onsemi', 'Qualcomm', 'Renesas', 'SCREEN Holdings', 'SK Hynix', 'SMIC', 'STMicroelectronics', 'SambaNova', 'Samsung Foundry', 'Samsung Memory', 'Synopsys', 'TSMC', 'Tenstorrent', 'Texas Instruments', 'Tokyo Electron', 'UMC', 'Yangtze Memory (YMTC)']
+2026-08-02 19:47:00 | DEBUG | M05 | Class counts:
+company_name
+TSMC                      17
+Samsung Foundry           17
+GlobalFoundries           17
+UMC                       17
+SMIC                      17
+NVIDIA                    17
+AMD                       17
+Qualcomm                  17
+Broadcom                  17
+MediaTek                  17
+Marvell                   17
+Intel                     17
+Samsung Memory            17
+SK Hynix                  17
+Micron                    17
+Texas Instruments         17
+Analog Devices            17
+Infineon                  17
+STMicroelectronics        17
+NXP Semiconductors        17
+Renesas                   17
+Microchip                 17
+Onsemi                    17
+ASML                      17
+Applied Materials         17
+Lam Research              17
+KLA                       17
+Tokyo Electron            17
+SCREEN Holdings           17
+Synopsys                  17
+Cadence                   17
+HiSilicon (Huawei)        17
+Hua Hong                  17
+Yangtze Memory (YMTC)     10
+ChangXin Memory (CXMT)     9
+Cerebras Systems           8
+Graphcore                  8
+Groq                       7
+SambaNova                  7
+Tenstorrent                7
+Name: count, dtype: int64
+2026-08-02 19:47:00 | INFO | M05 | Train instances: 493
+2026-08-02 19:47:00 | INFO | M05 | Test instances: 124
+2026-08-02 19:47:00 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:47:00 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:47:00 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:47:02 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:47:02 | INFO | M05 |   single_tree        test accuracy = 0.274
+2026-08-02 19:47:02 | INFO | M05 |   random_forest      test accuracy = 0.444
+2026-08-02 19:47:02 | INFO | M05 |   gradient_boosting  test accuracy = 0.355
+2026-08-02 19:47:02 | INFO | M05 | Best model: random_forest with test accuracy = 0.444
+2026-08-02 19:47:22 | INFO | M05 | ==========Random Forest==========
+2026-08-02 19:47:22 | INFO | M05 | Random Forest Test Accuracy: 0.444
+2026-08-02 19:47:22 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:47:22 | DEBUG | M05 | 
+                        precision    recall  f1-score   support
+
+                   AMD       0.50      0.33      0.40         3
+                  ASML       0.75      1.00      0.86         3
+        Analog Devices       0.75      1.00      0.86         3
+     Applied Materials       0.33      0.25      0.29         4
+              Broadcom       0.50      0.33      0.40         3
+               Cadence       0.40      0.67      0.50         3
+      Cerebras Systems       0.00      0.00      0.00         2
+ChangXin Memory (CXMT)       0.00      0.00      0.00         2
+       GlobalFoundries       0.20      0.25      0.22         4
+             Graphcore       1.00      1.00      1.00         2
+                  Groq       0.00      0.00      0.00         1
+    HiSilicon (Huawei)       0.25      0.25      0.25         4
+              Hua Hong       1.00      1.00      1.00         3
+              Infineon       0.00      0.00      0.00         3
+                 Intel       0.75      0.75      0.75         4
+                   KLA       0.00      0.00      0.00         3
+          Lam Research       0.12      0.33      0.18         3
+               Marvell       0.67      0.67      0.67         3
+              MediaTek       0.00      0.00      0.00         4
+             Microchip       0.40      0.67      0.50         3
+                Micron       0.29      0.67      0.40         3
+                NVIDIA       1.00      1.00      1.00         3
+    NXP Semiconductors       0.50      0.50      0.50         4
+                Onsemi       0.25      0.33      0.29         3
+              Qualcomm       0.33      0.25      0.29         4
+               Renesas       0.50      0.67      0.57         3
+       SCREEN Holdings       1.00      0.75      0.86         4
+              SK Hynix       0.50      0.25      0.33         4
+                  SMIC       1.00      0.33      0.50         3
+    STMicroelectronics       0.33      0.25      0.29         4
+             SambaNova       0.00      0.00      0.00         1
+       Samsung Foundry       0.38      1.00      0.55         3
+        Samsung Memory       0.67      0.50      0.57         4
+              Synopsys       0.50      0.25      0.33         4
+                  TSMC       0.00      0.00      0.00         3
+           Tenstorrent       0.00      0.00      0.00         1
+     Texas Instruments       1.00      1.00      1.00         4
+        Tokyo Electron       1.00      0.33      0.50         3
+                   UMC       0.50      0.25      0.33         4
+ Yangtze Memory (YMTC)       0.00      0.00      0.00         2
+
+              accuracy                           0.44       124
+             macro avg       0.43      0.42      0.40       124
+          weighted avg       0.47      0.44      0.43       124
+
+2026-08-02 19:47:22 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:47:24 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 19:47:24 | INFO | M05 | Decision Tree Test Accuracy: 0.274
+2026-08-02 19:47:24 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:47:24 | DEBUG | M05 | 
+                        precision    recall  f1-score   support
+
+                   AMD       0.00      0.00      0.00         3
+                  ASML       0.00      0.00      0.00         3
+        Analog Devices       0.00      0.00      0.00         3
+     Applied Materials       0.00      0.00      0.00         4
+              Broadcom       0.00      0.00      0.00         3
+               Cadence       1.00      0.33      0.50         3
+      Cerebras Systems       0.00      0.00      0.00         2
+ChangXin Memory (CXMT)       0.00      0.00      0.00         2
+       GlobalFoundries       0.00      0.00      0.00         4
+             Graphcore       0.00      0.00      0.00         2
+                  Groq       0.00      0.00      0.00         1
+    HiSilicon (Huawei)       0.00      0.00      0.00         4
+              Hua Hong       0.00      0.00      0.00         3
+              Infineon       0.00      0.00      0.00         3
+                 Intel       0.57      1.00      0.73         4
+                   KLA       0.00      0.00      0.00         3
+          Lam Research       0.09      1.00      0.17         3
+               Marvell       0.00      0.00      0.00         3
+              MediaTek       0.00      0.00      0.00         4
+             Microchip       0.00      0.00      0.00         3
+                Micron       0.33      0.33      0.33         3
+                NVIDIA       1.00      1.00      1.00         3
+    NXP Semiconductors       0.24      1.00      0.38         4
+                Onsemi       0.00      0.00      0.00         3
+              Qualcomm       0.14      0.25      0.18         4
+               Renesas       0.00      0.00      0.00         3
+       SCREEN Holdings       0.30      0.75      0.43         4
+              SK Hynix       0.00      0.00      0.00         4
+                  SMIC       0.08      0.67      0.15         3
+    STMicroelectronics       0.00      0.00      0.00         4
+             SambaNova       0.00      0.00      0.00         1
+       Samsung Foundry       0.33      0.67      0.44         3
+        Samsung Memory       0.75      0.75      0.75         4
+              Synopsys       0.60      0.75      0.67         4
+                  TSMC       0.00      0.00      0.00         3
+           Tenstorrent       0.00      0.00      0.00         1
+     Texas Instruments       0.80      1.00      0.89         4
+        Tokyo Electron       0.00      0.00      0.00         3
+                   UMC       0.00      0.00      0.00         4
+ Yangtze Memory (YMTC)       0.00      0.00      0.00         2
+
+              accuracy                           0.27       124
+             macro avg       0.16      0.24      0.17       124
+          weighted avg       0.18      0.27      0.19       124
+
+2026-08-02 19:47:24 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:47:24 | INFO | M05 |   operating_margin_pct 0.297
+2026-08-02 19:47:24 | INFO | M05 |   capex_usd_bn         0.272
+2026-08-02 19:47:24 | INFO | M05 |   revenue_usd_bn       0.220
+2026-08-02 19:47:24 | INFO | M05 |   operating_income_usd_bn 0.210
+2026-08-02 19:47:24 | INFO | M05 | ========================
+2026-08-02 19:47:24 | INFO | M05 | SUMMARY
+2026-08-02 19:47:24 | INFO | M05 | ========================
+2026-08-02 19:47:24 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: company_name (classification)
+2026-08-02 19:47:24 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:47:24 | INFO | M05 | ========================
+2026-08-02 19:47:53 | INFO | M05 | === RUN START ===
+2026-08-02 19:47:53 | INFO | M05 | project=M05
+2026-08-02 19:47:53 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:47:53 | INFO | M05 | python=3.14.6
+2026-08-02 19:47:53 | INFO | M05 | os=Windows 11
+2026-08-02 19:47:53 | INFO | M05 | shell=powershell
+2026-08-02 19:47:53 | INFO | M05 | cwd=notebooks
+2026-08-02 19:47:53 | INFO | M05 | github_actions=False
+2026-08-02 19:47:53 | INFO | M05 | Confirming installation:
+2026-08-02 19:47:53 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:47:53 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:47:53 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:47:53 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:47:53 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:47:53 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:47:53 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:47:53 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:47:53 | INFO | M05 | Original rows: 617
+2026-08-02 19:47:53 | INFO | M05 | Model rows:    617
+2026-08-02 19:47:53 | INFO | M05 | Classes in target 'country_iso3': ['CHN', 'DEU', 'EUR', 'GBR', 'JPN', 'KOR', 'NLD', 'TWN', 'USA']
+2026-08-02 19:47:53 | DEBUG | M05 | Class counts:
+country_iso3
+USA    318
+CHN     70
+TWN     51
+KOR     51
+JPN     51
+NLD     34
+DEU     17
+EUR     17
+GBR      8
+Name: count, dtype: int64
+2026-08-02 19:47:53 | INFO | M05 | Train instances: 493
+2026-08-02 19:47:53 | INFO | M05 | Test instances: 124
+2026-08-02 19:47:53 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:47:53 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:47:53 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:47:54 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:47:54 | INFO | M05 |   single_tree        test accuracy = 0.597
+2026-08-02 19:47:54 | INFO | M05 |   random_forest      test accuracy = 0.645
+2026-08-02 19:47:54 | INFO | M05 |   gradient_boosting  test accuracy = 0.589
+2026-08-02 19:47:54 | INFO | M05 | Best model: random_forest with test accuracy = 0.645
+2026-08-02 19:47:59 | INFO | M05 | ==========Random Forest==========
+2026-08-02 19:47:59 | INFO | M05 | Random Forest Test Accuracy: 0.645
+2026-08-02 19:47:59 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:47:59 | DEBUG | M05 | 
+              precision    recall  f1-score   support
+
+         CHN       1.00      0.50      0.67        14
+         DEU       0.00      0.00      0.00         4
+         EUR       0.60      1.00      0.75         3
+         GBR       0.50      0.50      0.50         2
+         JPN       0.22      0.20      0.21        10
+         KOR       0.56      0.50      0.53        10
+         NLD       0.40      0.57      0.47         7
+         TWN       0.43      0.30      0.35        10
+         USA       0.74      0.86      0.80        64
+
+    accuracy                           0.65       124
+   macro avg       0.49      0.49      0.47       124
+weighted avg       0.64      0.65      0.63       124
+
+2026-08-02 19:47:59 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:47:59 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 19:47:59 | INFO | M05 | Decision Tree Test Accuracy: 0.597
+2026-08-02 19:47:59 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:47:59 | DEBUG | M05 | 
+              precision    recall  f1-score   support
+
+         CHN       1.00      0.50      0.67        14
+         DEU       0.00      0.00      0.00         4
+         EUR       0.00      0.00      0.00         3
+         GBR       0.33      0.50      0.40         2
+         JPN       0.25      0.50      0.33        10
+         KOR       0.50      0.70      0.58        10
+         NLD       0.00      0.00      0.00         7
+         TWN       0.00      0.00      0.00        10
+         USA       0.68      0.84      0.76        64
+
+    accuracy                           0.60       124
+   macro avg       0.31      0.34      0.30       124
+weighted avg       0.53      0.60      0.55       124
+
+2026-08-02 19:47:59 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:47:59 | INFO | M05 |   capex_usd_bn         0.317
+2026-08-02 19:47:59 | INFO | M05 |   operating_margin_pct 0.241
+2026-08-02 19:47:59 | INFO | M05 |   revenue_usd_bn       0.222
+2026-08-02 19:47:59 | INFO | M05 |   operating_income_usd_bn 0.220
+2026-08-02 19:47:59 | INFO | M05 | ========================
+2026-08-02 19:47:59 | INFO | M05 | SUMMARY
+2026-08-02 19:47:59 | INFO | M05 | ========================
+2026-08-02 19:47:59 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: country_iso3 (classification)
+2026-08-02 19:47:59 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:47:59 | INFO | M05 | ========================
+2026-08-02 19:49:03 | INFO | M05 | === RUN START ===
+2026-08-02 19:49:03 | INFO | M05 | project=M05
+2026-08-02 19:49:03 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 19:49:03 | INFO | M05 | python=3.14.6
+2026-08-02 19:49:03 | INFO | M05 | os=Windows 11
+2026-08-02 19:49:03 | INFO | M05 | shell=powershell
+2026-08-02 19:49:03 | INFO | M05 | cwd=notebooks
+2026-08-02 19:49:03 | INFO | M05 | github_actions=False
+2026-08-02 19:49:03 | INFO | M05 | Confirming installation:
+2026-08-02 19:49:03 | INFO | M05 |   python:       3.14.6
+2026-08-02 19:49:03 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 19:49:03 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 19:49:03 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 19:49:03 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 19:49:03 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 19:49:03 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 19:49:04 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 19:49:04 | INFO | M05 | Original rows: 617
+2026-08-02 19:49:04 | INFO | M05 | Model rows:    617
+2026-08-02 19:49:04 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 19:49:04 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 19:49:04 | INFO | M05 | Train instances: 493
+2026-08-02 19:49:04 | INFO | M05 | Test instances: 124
+2026-08-02 19:49:04 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 19:49:04 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 19:49:04 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 19:49:05 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 19:49:05 | INFO | M05 |   single_tree        test accuracy = 0.597
+2026-08-02 19:49:05 | INFO | M05 |   random_forest      test accuracy = 0.685
+2026-08-02 19:49:05 | INFO | M05 |   gradient_boosting  test accuracy = 0.677
+2026-08-02 19:49:05 | INFO | M05 | Best model: random_forest with test accuracy = 0.685
+2026-08-02 19:49:15 | INFO | M05 | ==========Random Forest==========
+2026-08-02 19:49:15 | INFO | M05 | Random Forest Test Accuracy: 0.685
+2026-08-02 19:49:15 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:49:15 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.43      0.43      0.43         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.67      0.50      0.57         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.50      0.33      0.40         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.29      0.29      0.29         7
+   fabless_networking       0.33      0.25      0.29         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.29      0.67      0.40         3
+           idm_memory       1.00      0.79      0.88        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.20      0.33      0.25         3
+
+             accuracy                           0.69       124
+            macro avg       0.55      0.58      0.55       124
+         weighted avg       0.67      0.69      0.67       124
+
+2026-08-02 19:49:15 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 19:49:16 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 19:49:16 | INFO | M05 | Decision Tree Test Accuracy: 0.597
+2026-08-02 19:49:16 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 19:49:16 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.50      1.00      0.67         3
+equipment_diversified       0.29      0.57      0.38         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.22      0.57      0.32         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.60      1.00      0.75        21
+           idm_analog       0.33      0.14      0.20         7
+       idm_automotive       0.60      0.90      0.72        10
+              idm_cpu       0.80      1.00      0.89         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       1.00      0.71      0.83        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.60       124
+            macro avg       0.37      0.44      0.39       124
+         weighted avg       0.49      0.60      0.52       124
+
+2026-08-02 19:49:16 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 19:49:16 | INFO | M05 |   capex_usd_bn         0.338
+2026-08-02 19:49:16 | INFO | M05 |   operating_margin_pct 0.305
+2026-08-02 19:49:16 | INFO | M05 |   operating_income_usd_bn 0.193
+2026-08-02 19:49:16 | INFO | M05 |   revenue_usd_bn       0.163
+2026-08-02 19:49:16 | INFO | M05 | ========================
+2026-08-02 19:49:16 | INFO | M05 | SUMMARY
+2026-08-02 19:49:16 | INFO | M05 | ========================
+2026-08-02 19:49:16 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 19:49:16 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 19:49:16 | INFO | M05 | ========================
+2026-08-02 20:07:21 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:07:21 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:07:21 | INFO | M05 | Original rows: 617
+2026-08-02 20:07:21 | INFO | M05 | Model rows:    617
+2026-08-02 20:07:21 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:07:21 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:07:21 | INFO | M05 | Filtered rows: 260
+2026-08-02 20:08:42 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:08:42 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:08:42 | INFO | M05 | Original rows: 617
+2026-08-02 20:08:42 | INFO | M05 | Model rows:    617
+2026-08-02 20:08:42 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:08:42 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:08:42 | INFO | M05 | Filtered rows: 260
+2026-08-02 20:08:42 | INFO | M05 | Class counts after filtering:
+segment
+foundry           102
+idm_memory         70
+idm_automotive     51
+fabless_ai         37
+Name: count, dtype: int64
+2026-08-02 20:09:14 | INFO | M05 | Train instances: 208
+2026-08-02 20:09:14 | INFO | M05 | Test instances: 52
+2026-08-02 20:09:17 | INFO | M05 | === RUN START ===
+2026-08-02 20:09:17 | INFO | M05 | project=M05
+2026-08-02 20:09:17 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:09:17 | INFO | M05 | python=3.14.6
+2026-08-02 20:09:17 | INFO | M05 | os=Windows 11
+2026-08-02 20:09:17 | INFO | M05 | shell=powershell
+2026-08-02 20:09:17 | INFO | M05 | cwd=notebooks
+2026-08-02 20:09:17 | INFO | M05 | github_actions=False
+2026-08-02 20:09:17 | INFO | M05 | Confirming installation:
+2026-08-02 20:09:17 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:09:17 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:09:17 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:09:17 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:09:17 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:09:17 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:09:17 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:09:17 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:09:17 | INFO | M05 | Original rows: 617
+2026-08-02 20:09:17 | INFO | M05 | Model rows:    617
+2026-08-02 20:09:17 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:09:17 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:09:17 | INFO | M05 | Filtered rows: 260
+2026-08-02 20:09:17 | INFO | M05 | Class counts after filtering:
+segment
+foundry           102
+idm_memory         70
+idm_automotive     51
+fabless_ai         37
+Name: count, dtype: int64
+2026-08-02 20:09:17 | INFO | M05 | Train instances: 208
+2026-08-02 20:09:17 | INFO | M05 | Test instances: 52
+2026-08-02 20:09:17 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:09:17 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:09:17 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:09:17 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:09:17 | INFO | M05 |   single_tree        test accuracy = 0.846
+2026-08-02 20:09:17 | INFO | M05 |   random_forest      test accuracy = 0.865
+2026-08-02 20:09:17 | INFO | M05 |   gradient_boosting  test accuracy = 0.865
+2026-08-02 20:09:17 | INFO | M05 | Best model: random_forest with test accuracy = 0.865
+2026-08-02 20:09:20 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:09:20 | INFO | M05 | Random Forest Test Accuracy: 0.865
+2026-08-02 20:09:20 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:09:20 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.86      0.86      0.86        21
+idm_automotive       1.00      1.00      1.00        10
+    idm_memory       0.77      0.71      0.74        14
+
+      accuracy                           0.87        52
+     macro avg       0.88      0.89      0.88        52
+  weighted avg       0.86      0.87      0.86        52
+
+2026-08-02 20:09:20 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:09:20 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:09:20 | INFO | M05 | Decision Tree Test Accuracy: 0.846
+2026-08-02 20:09:20 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:09:20 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.83      0.90      0.86        21
+idm_automotive       0.91      1.00      0.95        10
+    idm_memory       0.80      0.57      0.67        14
+
+      accuracy                           0.85        52
+     macro avg       0.85      0.87      0.85        52
+  weighted avg       0.84      0.85      0.84        52
+
+2026-08-02 20:09:20 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:09:20 | INFO | M05 |   operating_margin_pct 0.383
+2026-08-02 20:09:20 | INFO | M05 |   capex_usd_bn         0.311
+2026-08-02 20:09:20 | INFO | M05 |   operating_income_usd_bn 0.192
+2026-08-02 20:09:20 | INFO | M05 |   revenue_usd_bn       0.114
+2026-08-02 20:09:20 | INFO | M05 | ========================
+2026-08-02 20:09:20 | INFO | M05 | SUMMARY
+2026-08-02 20:09:20 | INFO | M05 | ========================
+2026-08-02 20:09:20 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:09:20 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:09:20 | INFO | M05 | ========================
+2026-08-02 20:10:32 | INFO | M05 | === RUN START ===
+2026-08-02 20:10:32 | INFO | M05 | project=M05
+2026-08-02 20:10:32 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:10:32 | INFO | M05 | python=3.14.6
+2026-08-02 20:10:32 | INFO | M05 | os=Windows 11
+2026-08-02 20:10:32 | INFO | M05 | shell=powershell
+2026-08-02 20:10:32 | INFO | M05 | cwd=notebooks
+2026-08-02 20:10:32 | INFO | M05 | github_actions=False
+2026-08-02 20:10:32 | INFO | M05 | Confirming installation:
+2026-08-02 20:10:32 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:10:32 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:10:32 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:10:32 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:10:32 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:10:32 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:10:32 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:10:32 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:10:32 | INFO | M05 | Original rows: 617
+2026-08-02 20:10:32 | INFO | M05 | Model rows:    617
+2026-08-02 20:10:32 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:10:32 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:10:32 | INFO | M05 | Filtered rows: 260
+2026-08-02 20:10:32 | INFO | M05 | Class counts after filtering:
+segment
+foundry           102
+idm_memory         70
+idm_automotive     51
+fabless_ai         37
+Name: count, dtype: int64
+2026-08-02 20:10:32 | INFO | M05 | Train instances: 208
+2026-08-02 20:10:32 | INFO | M05 | Test instances: 52
+2026-08-02 20:10:32 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:10:32 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:10:32 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:10:32 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:10:32 | INFO | M05 |   single_tree        test accuracy = 0.904
+2026-08-02 20:10:32 | INFO | M05 |   random_forest      test accuracy = 0.904
+2026-08-02 20:10:32 | INFO | M05 |   gradient_boosting  test accuracy = 0.885
+2026-08-02 20:10:32 | INFO | M05 | Best model: single_tree with test accuracy = 0.904
+2026-08-02 20:10:35 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:10:35 | INFO | M05 | Random Forest Test Accuracy: 0.904
+2026-08-02 20:10:35 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:10:35 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.91      0.95      0.93        21
+idm_automotive       0.91      1.00      0.95        10
+    idm_memory       0.91      0.71      0.80        14
+
+      accuracy                           0.90        52
+     macro avg       0.90      0.92      0.90        52
+  weighted avg       0.90      0.90      0.90        52
+
+2026-08-02 20:10:35 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:10:35 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:10:35 | INFO | M05 | Decision Tree Test Accuracy: 0.904
+2026-08-02 20:10:35 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:10:35 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.91      0.95      0.93        21
+idm_automotive       1.00      0.90      0.95        10
+    idm_memory       0.85      0.79      0.81        14
+
+      accuracy                           0.90        52
+     macro avg       0.91      0.91      0.91        52
+  weighted avg       0.91      0.90      0.90        52
+
+2026-08-02 20:10:35 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:10:35 | INFO | M05 |   operating_margin_pct 0.365
+2026-08-02 20:10:35 | INFO | M05 |   capex_usd_bn         0.306
+2026-08-02 20:10:35 | INFO | M05 |   operating_income_usd_bn 0.214
+2026-08-02 20:10:35 | INFO | M05 |   revenue_usd_bn       0.114
+2026-08-02 20:10:35 | INFO | M05 | ========================
+2026-08-02 20:10:35 | INFO | M05 | SUMMARY
+2026-08-02 20:10:35 | INFO | M05 | ========================
+2026-08-02 20:10:35 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:10:35 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:10:35 | INFO | M05 | ========================
+2026-08-02 20:40:53 | INFO | M05 | === RUN START ===
+2026-08-02 20:40:53 | INFO | M05 | project=M05
+2026-08-02 20:40:53 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:40:53 | INFO | M05 | python=3.14.6
+2026-08-02 20:40:53 | INFO | M05 | os=Windows 11
+2026-08-02 20:40:53 | INFO | M05 | shell=powershell
+2026-08-02 20:40:53 | INFO | M05 | cwd=notebooks
+2026-08-02 20:40:53 | INFO | M05 | github_actions=False
+2026-08-02 20:40:53 | INFO | M05 | Confirming installation:
+2026-08-02 20:40:53 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:40:53 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:40:53 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:40:53 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:40:53 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:40:53 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:42:29 | INFO | M05 | === RUN START ===
+2026-08-02 20:42:29 | INFO | M05 | project=M05
+2026-08-02 20:42:29 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:42:29 | INFO | M05 | python=3.14.6
+2026-08-02 20:42:29 | INFO | M05 | os=Windows 11
+2026-08-02 20:42:29 | INFO | M05 | shell=powershell
+2026-08-02 20:42:29 | INFO | M05 | cwd=notebooks
+2026-08-02 20:42:29 | INFO | M05 | github_actions=False
+2026-08-02 20:42:29 | INFO | M05 | Confirming installation:
+2026-08-02 20:42:29 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:42:29 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:42:29 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:42:29 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:42:29 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:42:29 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:42:29 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:42:29 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:42:29 | INFO | M05 | Original rows: 617
+2026-08-02 20:42:29 | INFO | M05 | Model rows:    617
+2026-08-02 20:42:29 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:42:29 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:42:29 | INFO | M05 | Filtered rows: 260
+2026-08-02 20:42:29 | INFO | M05 | Class counts after filtering:
+segment
+foundry           102
+idm_memory         70
+idm_automotive     51
+fabless_ai         37
+Name: count, dtype: int64
+2026-08-02 20:42:29 | INFO | M05 | Train instances: 208
+2026-08-02 20:42:29 | INFO | M05 | Test instances: 52
+2026-08-02 20:42:29 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:42:29 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:42:29 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:42:29 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:42:29 | INFO | M05 |   single_tree        test accuracy = 0.904
+2026-08-02 20:42:29 | INFO | M05 |   random_forest      test accuracy = 0.904
+2026-08-02 20:42:29 | INFO | M05 |   gradient_boosting  test accuracy = 0.885
+2026-08-02 20:42:29 | INFO | M05 | Best model: single_tree with test accuracy = 0.904
+2026-08-02 20:42:31 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:42:31 | INFO | M05 | Random Forest Test Accuracy: 0.904
+2026-08-02 20:42:31 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:42:31 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.91      0.95      0.93        21
+idm_automotive       0.91      1.00      0.95        10
+    idm_memory       0.91      0.71      0.80        14
+
+      accuracy                           0.90        52
+     macro avg       0.90      0.92      0.90        52
+  weighted avg       0.90      0.90      0.90        52
+
+2026-08-02 20:42:31 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:42:32 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:42:32 | INFO | M05 | Decision Tree Test Accuracy: 0.904
+2026-08-02 20:42:32 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:42:32 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.91      0.95      0.93        21
+idm_automotive       1.00      0.90      0.95        10
+    idm_memory       0.85      0.79      0.81        14
+
+      accuracy                           0.90        52
+     macro avg       0.91      0.91      0.91        52
+  weighted avg       0.91      0.90      0.90        52
+
+2026-08-02 20:42:32 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:42:32 | INFO | M05 |   operating_margin_pct 0.365
+2026-08-02 20:42:32 | INFO | M05 |   capex_usd_bn         0.306
+2026-08-02 20:42:32 | INFO | M05 |   operating_income_usd_bn 0.214
+2026-08-02 20:42:32 | INFO | M05 |   revenue_usd_bn       0.114
+2026-08-02 20:42:32 | INFO | M05 | ========================
+2026-08-02 20:42:32 | INFO | M05 | SUMMARY
+2026-08-02 20:42:32 | INFO | M05 | ========================
+2026-08-02 20:42:32 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:42:32 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:42:32 | INFO | M05 | ========================
+2026-08-02 20:43:39 | INFO | M05 | === RUN START ===
+2026-08-02 20:43:39 | INFO | M05 | project=M05
+2026-08-02 20:43:39 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:43:39 | INFO | M05 | python=3.14.6
+2026-08-02 20:43:39 | INFO | M05 | os=Windows 11
+2026-08-02 20:43:39 | INFO | M05 | shell=powershell
+2026-08-02 20:43:39 | INFO | M05 | cwd=notebooks
+2026-08-02 20:43:39 | INFO | M05 | github_actions=False
+2026-08-02 20:43:39 | INFO | M05 | Confirming installation:
+2026-08-02 20:43:39 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:43:39 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:43:39 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:43:39 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:43:39 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:43:39 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:43:39 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:43:39 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:43:39 | INFO | M05 | Original rows: 617
+2026-08-02 20:43:39 | INFO | M05 | Model rows:    617
+2026-08-02 20:43:39 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:43:39 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:43:39 | INFO | M05 | Train instances: 493
+2026-08-02 20:43:39 | INFO | M05 | Test instances: 124
+2026-08-02 20:43:39 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:43:39 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:43:39 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:43:40 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:43:40 | INFO | M05 |   single_tree        test accuracy = 0.540
+2026-08-02 20:43:40 | INFO | M05 |   random_forest      test accuracy = 0.677
+2026-08-02 20:43:40 | INFO | M05 |   gradient_boosting  test accuracy = 0.661
+2026-08-02 20:43:40 | INFO | M05 | Best model: random_forest with test accuracy = 0.677
+2026-08-02 20:43:50 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:43:50 | INFO | M05 | Random Forest Test Accuracy: 0.677
+2026-08-02 20:43:50 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:43:50 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.50      0.43      0.46         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.75      0.75      0.75         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.20      0.14      0.17         7
+   fabless_networking       0.50      0.50      0.50         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.82      0.90      0.86        10
+              idm_cpu       1.00      1.00      1.00         4
+      idm_diversified       0.33      0.67      0.44         3
+           idm_memory       1.00      0.86      0.92        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.68       124
+            macro avg       0.53      0.56      0.54       124
+         weighted avg       0.67      0.68      0.67       124
+
+2026-08-02 20:43:50 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:43:51 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:43:51 | INFO | M05 | Decision Tree Test Accuracy: 0.540
+2026-08-02 20:43:51 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:43:51 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.00      0.00      0.00         3
+equipment_diversified       0.19      0.86      0.31         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.55      1.00      0.71        21
+           idm_analog       0.00      0.00      0.00         7
+       idm_automotive       0.43      0.90      0.58        10
+              idm_cpu       0.67      1.00      0.80         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       1.00      0.64      0.78        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.54       124
+            macro avg       0.29      0.37      0.31       124
+         weighted avg       0.42      0.54      0.44       124
+
+2026-08-02 20:43:51 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:43:51 | INFO | M05 |   capex_usd_bn         0.332
+2026-08-02 20:43:51 | INFO | M05 |   operating_margin_pct 0.306
+2026-08-02 20:43:51 | INFO | M05 |   revenue_usd_bn       0.182
+2026-08-02 20:43:51 | INFO | M05 |   operating_income_usd_bn 0.180
+2026-08-02 20:43:51 | INFO | M05 | ========================
+2026-08-02 20:43:51 | INFO | M05 | SUMMARY
+2026-08-02 20:43:51 | INFO | M05 | ========================
+2026-08-02 20:43:51 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:43:51 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:43:51 | INFO | M05 | ========================
+2026-08-02 20:45:28 | INFO | M05 | === RUN START ===
+2026-08-02 20:45:28 | INFO | M05 | project=M05
+2026-08-02 20:45:28 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:45:28 | INFO | M05 | python=3.14.6
+2026-08-02 20:45:28 | INFO | M05 | os=Windows 11
+2026-08-02 20:45:28 | INFO | M05 | shell=powershell
+2026-08-02 20:45:28 | INFO | M05 | cwd=notebooks
+2026-08-02 20:45:28 | INFO | M05 | github_actions=False
+2026-08-02 20:45:28 | INFO | M05 | Confirming installation:
+2026-08-02 20:45:28 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:45:29 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:45:29 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:45:29 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:45:29 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:45:29 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:45:29 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:45:29 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:45:29 | INFO | M05 | Original rows: 617
+2026-08-02 20:45:29 | INFO | M05 | Model rows:    617
+2026-08-02 20:45:29 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:45:29 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:45:29 | INFO | M05 | Train instances: 493
+2026-08-02 20:45:29 | INFO | M05 | Test instances: 124
+2026-08-02 20:45:29 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:45:29 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:45:29 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:45:29 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:45:29 | INFO | M05 |   single_tree        test accuracy = 0.427
+2026-08-02 20:45:29 | INFO | M05 |   random_forest      test accuracy = 0.653
+2026-08-02 20:45:29 | INFO | M05 |   gradient_boosting  test accuracy = 0.581
+2026-08-02 20:45:29 | INFO | M05 | Best model: random_forest with test accuracy = 0.653
+2026-08-02 20:45:38 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:45:38 | INFO | M05 | Random Forest Test Accuracy: 0.653
+2026-08-02 20:45:38 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:45:38 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.50      0.33      0.40         3
+equipment_diversified       0.44      0.57      0.50         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.17      0.33      0.22         3
+      equipment_litho       0.80      1.00      0.89         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.25      0.33      0.29         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.25      0.14      0.18         7
+   fabless_networking       0.43      0.75      0.55         4
+              foundry       0.87      0.95      0.91        21
+           idm_analog       1.00      0.43      0.60         7
+       idm_automotive       0.83      1.00      0.91        10
+              idm_cpu       1.00      1.00      1.00         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       0.92      0.79      0.85        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.65       124
+            macro avg       0.52      0.53      0.51       124
+         weighted avg       0.65      0.65      0.64       124
+
+2026-08-02 20:45:38 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:45:39 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:45:39 | INFO | M05 | Decision Tree Test Accuracy: 0.427
+2026-08-02 20:45:39 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:45:39 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.12      1.00      0.21         3
+equipment_diversified       0.00      0.00      0.00         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      0.33      0.50         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.72      0.62      0.67        21
+           idm_analog       0.19      0.43      0.26         7
+       idm_automotive       0.28      0.70      0.40        10
+              idm_cpu       0.00      0.00      0.00         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       0.46      0.79      0.58        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.43       124
+            macro avg       0.24      0.29      0.23       124
+         weighted avg       0.36      0.43      0.36       124
+
+2026-08-02 20:45:39 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:45:39 | INFO | M05 |   capex_usd_bn         0.406
+2026-08-02 20:45:39 | INFO | M05 |   operating_income_usd_bn 0.310
+2026-08-02 20:45:39 | INFO | M05 |   revenue_usd_bn       0.284
+2026-08-02 20:45:39 | INFO | M05 | ========================
+2026-08-02 20:45:39 | INFO | M05 | SUMMARY
+2026-08-02 20:45:39 | INFO | M05 | ========================
+2026-08-02 20:45:39 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:45:39 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:45:39 | INFO | M05 | ========================
+2026-08-02 20:46:56 | INFO | M05 | === RUN START ===
+2026-08-02 20:46:56 | INFO | M05 | project=M05
+2026-08-02 20:46:56 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:46:56 | INFO | M05 | python=3.14.6
+2026-08-02 20:46:56 | INFO | M05 | os=Windows 11
+2026-08-02 20:46:56 | INFO | M05 | shell=powershell
+2026-08-02 20:46:56 | INFO | M05 | cwd=notebooks
+2026-08-02 20:46:56 | INFO | M05 | github_actions=False
+2026-08-02 20:46:56 | INFO | M05 | Confirming installation:
+2026-08-02 20:46:56 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:46:56 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:46:56 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:46:56 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:46:56 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:46:56 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:46:56 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:46:56 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:46:56 | INFO | M05 | Original rows: 617
+2026-08-02 20:46:56 | INFO | M05 | Model rows:    617
+2026-08-02 20:46:56 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:46:56 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:46:56 | INFO | M05 | Train instances: 493
+2026-08-02 20:46:56 | INFO | M05 | Test instances: 124
+2026-08-02 20:46:56 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:46:56 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:46:56 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:46:56 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:46:56 | INFO | M05 |   single_tree        test accuracy = 0.355
+2026-08-02 20:46:56 | INFO | M05 |   random_forest      test accuracy = 0.589
+2026-08-02 20:46:56 | INFO | M05 |   gradient_boosting  test accuracy = 0.476
+2026-08-02 20:46:57 | INFO | M05 | Best model: random_forest with test accuracy = 0.589
+2026-08-02 20:47:05 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:47:05 | INFO | M05 | Random Forest Test Accuracy: 0.589
+2026-08-02 20:47:05 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:47:05 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.00      0.00      0.00         3
+equipment_diversified       0.50      0.43      0.46         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       1.00      0.75      0.86         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.40      0.29      0.33         7
+   fabless_networking       0.22      0.50      0.31         4
+              foundry       0.82      0.86      0.84        21
+           idm_analog       1.00      0.43      0.60         7
+       idm_automotive       0.91      1.00      0.95        10
+              idm_cpu       1.00      1.00      1.00         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       0.77      0.71      0.74        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.59       124
+            macro avg       0.48      0.45      0.45       124
+         weighted avg       0.62      0.59      0.60       124
+
+2026-08-02 20:47:05 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:47:06 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:47:06 | INFO | M05 | Decision Tree Test Accuracy: 0.355
+2026-08-02 20:47:06 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:47:06 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       0.67      0.29      0.40         7
+   equipment_cleaning       0.12      1.00      0.21         3
+equipment_diversified       0.00      0.00      0.00         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       0.62      1.00      0.76         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       0.00      0.00      0.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.72      0.62      0.67        21
+           idm_analog       0.00      0.00      0.00         7
+       idm_automotive       0.18      0.70      0.29        10
+              idm_cpu       0.00      0.00      0.00         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       0.46      0.79      0.58        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.35       124
+            macro avg       0.14      0.22      0.15       124
+         weighted avg       0.27      0.35      0.28       124
+
+2026-08-02 20:47:06 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:47:06 | INFO | M05 |   capex_usd_bn         0.513
+2026-08-02 20:47:06 | INFO | M05 |   revenue_usd_bn       0.487
+2026-08-02 20:47:06 | INFO | M05 | ========================
+2026-08-02 20:47:06 | INFO | M05 | SUMMARY
+2026-08-02 20:47:06 | INFO | M05 | ========================
+2026-08-02 20:47:06 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:47:06 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:47:06 | INFO | M05 | ========================
+2026-08-02 20:47:58 | INFO | M05 | === RUN START ===
+2026-08-02 20:47:58 | INFO | M05 | project=M05
+2026-08-02 20:47:58 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:47:58 | INFO | M05 | python=3.14.6
+2026-08-02 20:47:58 | INFO | M05 | os=Windows 11
+2026-08-02 20:47:58 | INFO | M05 | shell=powershell
+2026-08-02 20:47:58 | INFO | M05 | cwd=notebooks
+2026-08-02 20:47:58 | INFO | M05 | github_actions=False
+2026-08-02 20:47:58 | INFO | M05 | Confirming installation:
+2026-08-02 20:47:58 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:47:58 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:47:58 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:47:58 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:47:58 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:47:58 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:47:58 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:47:58 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:47:58 | INFO | M05 | Original rows: 617
+2026-08-02 20:47:58 | INFO | M05 | Model rows:    617
+2026-08-02 20:47:58 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:47:58 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:47:58 | INFO | M05 | Train instances: 493
+2026-08-02 20:47:58 | INFO | M05 | Test instances: 124
+2026-08-02 20:47:58 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:47:58 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:47:58 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:47:58 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:47:58 | INFO | M05 |   single_tree        test accuracy = 0.540
+2026-08-02 20:47:58 | INFO | M05 |   random_forest      test accuracy = 0.677
+2026-08-02 20:47:58 | INFO | M05 |   gradient_boosting  test accuracy = 0.661
+2026-08-02 20:47:58 | INFO | M05 | Best model: random_forest with test accuracy = 0.677
+2026-08-02 20:48:09 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:48:09 | INFO | M05 | Random Forest Test Accuracy: 0.677
+2026-08-02 20:48:09 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:48:09 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.60      1.00      0.75         3
+equipment_diversified       0.50      0.43      0.46         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.20      0.33      0.25         3
+      equipment_litho       0.75      0.75      0.75         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.20      0.14      0.17         7
+   fabless_networking       0.50      0.50      0.50         4
+              foundry       0.91      1.00      0.95        21
+           idm_analog       0.83      0.71      0.77         7
+       idm_automotive       0.82      0.90      0.86        10
+              idm_cpu       1.00      1.00      1.00         4
+      idm_diversified       0.33      0.67      0.44         3
+           idm_memory       1.00      0.86      0.92        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.68       124
+            macro avg       0.53      0.56      0.54       124
+         weighted avg       0.67      0.68      0.67       124
+
+2026-08-02 20:48:09 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:48:09 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:48:09 | INFO | M05 | Decision Tree Test Accuracy: 0.540
+2026-08-02 20:48:09 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:48:09 | DEBUG | M05 | 
+                       precision    recall  f1-score   support
+
+         eda_software       1.00      1.00      1.00         7
+   equipment_cleaning       0.00      0.00      0.00         3
+equipment_diversified       0.19      0.86      0.31         7
+       equipment_etch       0.00      0.00      0.00         3
+ equipment_inspection       0.00      0.00      0.00         3
+      equipment_litho       0.00      0.00      0.00         4
+           fabless_ai       1.00      1.00      1.00         8
+      fabless_cpu_gpu       0.00      0.00      0.00         3
+  fabless_diversified       0.00      0.00      0.00         7
+          fabless_gpu       1.00      1.00      1.00         3
+       fabless_mobile       0.00      0.00      0.00         7
+   fabless_networking       0.00      0.00      0.00         4
+              foundry       0.55      1.00      0.71        21
+           idm_analog       0.00      0.00      0.00         7
+       idm_automotive       0.43      0.90      0.58        10
+              idm_cpu       0.67      1.00      0.80         4
+      idm_diversified       0.00      0.00      0.00         3
+           idm_memory       1.00      0.64      0.78        14
+            idm_micro       0.00      0.00      0.00         3
+            idm_power       0.00      0.00      0.00         3
+
+             accuracy                           0.54       124
+            macro avg       0.29      0.37      0.31       124
+         weighted avg       0.42      0.54      0.44       124
+
+2026-08-02 20:48:09 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:48:09 | INFO | M05 |   capex_usd_bn         0.332
+2026-08-02 20:48:09 | INFO | M05 |   operating_margin_pct 0.306
+2026-08-02 20:48:09 | INFO | M05 |   revenue_usd_bn       0.182
+2026-08-02 20:48:09 | INFO | M05 |   operating_income_usd_bn 0.180
+2026-08-02 20:48:10 | INFO | M05 | ========================
+2026-08-02 20:48:10 | INFO | M05 | SUMMARY
+2026-08-02 20:48:10 | INFO | M05 | ========================
+2026-08-02 20:48:10 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:48:10 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:48:10 | INFO | M05 | ========================
+2026-08-02 20:48:14 | INFO | M05 | === RUN START ===
+2026-08-02 20:48:14 | INFO | M05 | project=M05
+2026-08-02 20:48:14 | INFO | M05 | repo_dir=CS44670-Module-5
+2026-08-02 20:48:14 | INFO | M05 | python=3.14.6
+2026-08-02 20:48:14 | INFO | M05 | os=Windows 11
+2026-08-02 20:48:14 | INFO | M05 | shell=powershell
+2026-08-02 20:48:14 | INFO | M05 | cwd=notebooks
+2026-08-02 20:48:14 | INFO | M05 | github_actions=False
+2026-08-02 20:48:14 | INFO | M05 | Confirming installation:
+2026-08-02 20:48:14 | INFO | M05 |   python:       3.14.6
+2026-08-02 20:48:14 | INFO | M05 |   pandas:       3.0.5
+2026-08-02 20:48:14 | INFO | M05 |   numpy:        2.5.1
+2026-08-02 20:48:14 | INFO | M05 |   scikit-learn: 1.9.0
+2026-08-02 20:48:14 | INFO | M05 |   seaborn:      0.13.2
+2026-08-02 20:48:14 | INFO | M05 |   matplotlib:   3.11.1
+2026-08-02 20:48:14 | INFO | M05 | Loading dataset: chip_companies_financials.csv
+2026-08-02 20:48:14 | INFO | M05 | Loaded: 617 rows (instances), 10 columns
+2026-08-02 20:48:14 | INFO | M05 | Original rows: 617
+2026-08-02 20:48:14 | INFO | M05 | Model rows:    617
+2026-08-02 20:48:14 | INFO | M05 | Classes in target 'segment': ['eda_software', 'equipment_cleaning', 'equipment_diversified', 'equipment_etch', 'equipment_inspection', 'equipment_litho', 'fabless_ai', 'fabless_cpu_gpu', 'fabless_diversified', 'fabless_gpu', 'fabless_mobile', 'fabless_networking', 'foundry', 'idm_analog', 'idm_automotive', 'idm_cpu', 'idm_diversified', 'idm_memory', 'idm_micro', 'idm_power']
+2026-08-02 20:48:14 | DEBUG | M05 | Class counts:
+segment
+foundry                  102
+idm_memory                70
+idm_automotive            51
+fabless_ai                37
+fabless_mobile            34
+fabless_diversified       34
+idm_analog                34
+equipment_diversified     34
+eda_software              34
+fabless_gpu               17
+fabless_cpu_gpu           17
+fabless_networking        17
+idm_cpu                   17
+idm_diversified           17
+idm_micro                 17
+idm_power                 17
+equipment_litho           17
+equipment_etch            17
+equipment_inspection      17
+equipment_cleaning        17
+Name: count, dtype: int64
+2026-08-02 20:48:14 | INFO | M05 | Filtered rows: 260
+2026-08-02 20:48:14 | INFO | M05 | Class counts after filtering:
+segment
+foundry           102
+idm_memory         70
+idm_automotive     51
+fabless_ai         37
+Name: count, dtype: int64
+2026-08-02 20:48:14 | INFO | M05 | Train instances: 208
+2026-08-02 20:48:14 | INFO | M05 | Test instances: 52
+2026-08-02 20:48:14 | INFO | M05 | Fitting single tree + two ensembles
+2026-08-02 20:48:14 | DEBUG | M05 |   fitted: single_tree
+2026-08-02 20:48:14 | DEBUG | M05 |   fitted: random_forest
+2026-08-02 20:48:14 | DEBUG | M05 |   fitted: gradient_boosting
+2026-08-02 20:48:14 | INFO | M05 |   single_tree        test accuracy = 0.904
+2026-08-02 20:48:14 | INFO | M05 |   random_forest      test accuracy = 0.904
+2026-08-02 20:48:14 | INFO | M05 |   gradient_boosting  test accuracy = 0.885
+2026-08-02 20:48:14 | INFO | M05 | Best model: single_tree with test accuracy = 0.904
+2026-08-02 20:48:16 | INFO | M05 | ==========Random Forest==========
+2026-08-02 20:48:16 | INFO | M05 | Random Forest Test Accuracy: 0.904
+2026-08-02 20:48:16 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:48:16 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.91      0.95      0.93        21
+idm_automotive       0.91      1.00      0.95        10
+    idm_memory       0.91      0.71      0.80        14
+
+      accuracy                           0.90        52
+     macro avg       0.90      0.92      0.90        52
+  weighted avg       0.90      0.90      0.90        52
+
+2026-08-02 20:48:16 | INFO | M05 | Showing confusion matrix (rows = actual, cols = predicted)
+2026-08-02 20:48:17 | INFO | M05 | ==========Decision Tree==========
+2026-08-02 20:48:17 | INFO | M05 | Decision Tree Test Accuracy: 0.904
+2026-08-02 20:48:17 | INFO | M05 | Per-class precision / recall / F1:
+2026-08-02 20:48:17 | DEBUG | M05 | 
+                precision    recall  f1-score   support
+
+    fabless_ai       0.88      1.00      0.93         7
+       foundry       0.91      0.95      0.93        21
+idm_automotive       1.00      0.90      0.95        10
+    idm_memory       0.85      0.79      0.81        14
+
+      accuracy                           0.90        52
+     macro avg       0.91      0.91      0.91        52
+  weighted avg       0.91      0.90      0.90        52
+
+2026-08-02 20:48:17 | INFO | M05 | Random forest feature importances (high to low):
+2026-08-02 20:48:17 | INFO | M05 |   operating_margin_pct 0.365
+2026-08-02 20:48:17 | INFO | M05 |   capex_usd_bn         0.306
+2026-08-02 20:48:17 | INFO | M05 |   operating_income_usd_bn 0.214
+2026-08-02 20:48:17 | INFO | M05 |   revenue_usd_bn       0.114
+2026-08-02 20:48:17 | INFO | M05 | ========================
+2026-08-02 20:48:17 | INFO | M05 | SUMMARY
+2026-08-02 20:48:17 | INFO | M05 | ========================
+2026-08-02 20:48:17 | INFO | M05 | Dataset: chip_companies_financials.csv   Target: segment (classification)
+2026-08-02 20:48:17 | INFO | M05 | Compared: single tree vs. random forest vs. gradient boosting
+2026-08-02 20:48:17 | INFO | M05 | ========================
