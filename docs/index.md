@@ -112,4 +112,4 @@ Include:
 
 Display at least one image or screenshot showing your work.
 
-![Confusion Matrices](/docs/images/image.png)
+![Confusion Matrices](./images/image.png)
